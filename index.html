@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Complete ML + DL Project Roadmap</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">ML</div>
+        <div>
+          <h1>Complete ML & DL Project Roadmap</h1>
+          <p class="lead">Each project teaches a model — expand cards for dataset & starter code. Track progress and export/import.</p>
+        </div>
+      </div>
+
+      <div class="controls" role="toolbar" aria-label="controls">
+        <div class="search" title="Search models or projects">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="opacity:.7"><path d="M21 21l-4.35-4.35" stroke="#475569" stroke-width="1.4" stroke-linecap="round"/></svg>
+          <input id="search" placeholder="Search model or project (e.g., 'CNN', 'churn')" />
+        </div>
+
+        <div class="progress-wrap" title="Completion">
+          <div style="font-size:13px;color:var(--muted)">Progress</div>
+          <div class="progress-bar" id="progressBar"><i id="progressFill"></i></div>
+          <div id="progressPercent" class="progress-text">0%</div>
+        </div>
+
+        <button id="exportBtn" title="Export progress">Export</button>
+        <button id="importBtn" class="ghost" title="Import progress">Import</button>
+        <button id="resetBtn" class="ghost" title="Reset progress">Reset</button>
+        <input type="file" id="importFile" accept="application/json" style="display:none" />
+      </div>
+    </header>
+
+    <main>
+      <!-- We'll render grouped stages here -->
+      <section id="stage-1">
+        <h2>Stage 1 — Fundamentals</h2>
+        <p>Start with interpretable, small projects to build intuition.</p>
+        <div class="list" id="list-stage-1"></div>
+      </section>
+
+      <section id="stage-2">
+        <h2>Stage 2 — Trees & Ensembles</h2>
+        <p>Learn splitting, ensembles, and robust tabular methods.</p>
+        <div class="list" id="list-stage-2"></div>
+      </section>
+
+      <section id="stage-3">
+        <h2>Stage 3 — Unsupervised & Time Series</h2>
+        <p>Find structure in data and forecast trends.</p>
+        <div class="list" id="list-stage-3"></div>
+      </section>
+
+      <section id="stage-4">
+        <h2>Stage 4 — Deep Learning Essentials</h2>
+        <p>Neural networks for vision & language.</p>
+        <div class="list" id="list-stage-4"></div>
+      </section>
+
+      <section id="stage-5">
+        <h2>Stage 5 — Advanced & Production</h2>
+        <p>Generative models, RL, GNNs and deploying models to production.</p>
+        <div class="list" id="list-stage-5"></div>
+      </section>
+    </main>
+
+    <footer>Tip: For each project — get a baseline, evaluate, then iterate (feature engineering → tuning → ensembles / DL). Good luck! 🚀</footer>
+  </div>
+
+  <script src="script.js">
+ 
+  </script>
+</body>
+</html>
